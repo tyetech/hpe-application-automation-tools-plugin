@@ -1,0 +1,23 @@
+import j2meunit.framework.*;
+public class TestLoginWindow extends TestCase {
+  public TestLoginWindow() {
+    super("null");
+  }
+  public TestLoginWindow(String s) {
+    super(s);
+  }
+  protected void runTest() throws java.lang.Throwable {     
+    if(getTestMethodName().equals("testLoginWindow"))      
+      testLogindWindow();
+    }    
+    public Test suite() {
+      return new TestSuite(new TestLoginWindow().getClass(), 
+        new String[] {"testLoginWindow"});
+    }    
+    public void testLoginWindow(){
+      // test it
+      // use assert(String, boolean)
+    } 
+  }
+}
+
